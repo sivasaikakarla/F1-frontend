@@ -79,7 +79,7 @@ export default function BasicTable() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/admintable")
+      .get(`${process.env.REACT_APP_SERVER_DOMIN}/api/admintable`)
       .then((response) => setData(response.data))
       .catch((error) => console.error(error));
   }, []);
@@ -89,7 +89,7 @@ export default function BasicTable() {
     console.log(orderId);
     try {
       // Make an API request to update the order status
-      const response = await axios.post("http://localhost:8080/searchorder", {
+      const response = await axios.post(`${process.env.REACT_APP_SERVER_DOMIN}/searchorder`, {
         orderId,
       });
       console.log("hi");

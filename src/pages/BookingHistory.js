@@ -8,7 +8,7 @@ const BookingHistory = () => {
 
   useEffect(() => {
     
-    axios.get('http://localhost:8080/api/history')
+    axios.get(`${process.env.REACT_APP_SERVER_DOMIN}/api/history`)
       .then(response => setData(response.data))
       .catch(error => console.error(error));
   }, []);

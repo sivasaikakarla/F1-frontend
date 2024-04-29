@@ -27,7 +27,7 @@ const EmployeeDetails = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get("http://localhost:8080/api/getdbdetails");
+            const response = await axios.get(`${process.env.REACT_APP_SERVER_DOMIN}/api/getdbdetails`);
             setData(response.data);
         } catch (error) {
             console.error(error);
@@ -68,7 +68,7 @@ const EmployeeDetails = () => {
 
     const confirmDelete = async () => {
         try {
-            await axios.delete(`http://localhost:8080/api/deletedb/${userToDelete._id}`);
+            await axios.delete(`${process.env.REACT_APP_SERVER_DOMIN}/api/deletedb/${userToDelete._id}`);
             setShowDeleteModal(false);
             fetchData();
         } catch (error) {
@@ -82,7 +82,7 @@ const EmployeeDetails = () => {
             const { fullName, phone, area } = updatedDetails;
             const updatedUserData = { userId: editedUser._id, fullName, phone, area };
     
-            await axios.post('http://localhost:8080/api/updatedb', updatedUserData);
+            await axios.post(`${process.env.REACT_APP_SERVER_DOMIN}/api/updatedb`, updatedUserData);
     
             setShowModal(false);
             fetchData();

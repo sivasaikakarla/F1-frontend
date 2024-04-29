@@ -18,7 +18,7 @@ const NotifyCustomer  = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/api/db");
+      const response = await axios.get(`${process.env.REACT_APP_SERVER_DOMIN}/api/db`);
       setData(response.data);
     } catch (error) {
       console.error(error);
@@ -28,7 +28,7 @@ const NotifyCustomer  = () => {
   const handleNotifyClick = async (email, orderId) => {
     try {
       toast("Email Sent Successfully");
-      const response = await axios.post("http://localhost:8080/NotifyCustomer", {
+      const response = await axios.post(`${process.env.REACT_APP_SERVER_DOMIN}/NotifyCustomer`, {
         emailId: email,
         orderId: orderId,
       });

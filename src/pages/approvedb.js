@@ -23,7 +23,7 @@ const Approvedb = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/approvedb");
+      const response = await axios.get(`${process.env.REACT_APP_SERVER_DOMIN}/approvedb`);
       setData(response.data);
     } catch (error) {
       console.error(error);
@@ -38,7 +38,7 @@ const Approvedb = () => {
       // Make an API request to update the order status
       toast("Request Approved");
       
-      const response = await axios.post("http://localhost:8080/approvedb", {
+      const response = await axios.post(`${process.env.REACT_APP_SERVER_DOMIN}/approvedb`, {
         emailId,
       });
      

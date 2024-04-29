@@ -8,7 +8,7 @@ const DbBookingHistory = () => {
 
   useEffect(() => {
     
-    axios.get('http://localhost:8080/api/dbhistory')
+    axios.get(`${process.env.REACT_APP_SERVER_DOMIN}/api/dbhistory`)
       .then(response => setData(response.data))
       .catch(error => console.error(error));
       console.log(data);

@@ -10,7 +10,7 @@ const MyAccount = () => {
 
   useEffect(() => {
     
-    axios.get('http://localhost:8080/api/data')
+    axios.get(`${process.env.REACT_APP_SERVER_DOMIN}/api/data`)
       .then(response => setData(response.data))
       .catch(error => console.error(error));
   }, []);

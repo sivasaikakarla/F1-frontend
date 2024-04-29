@@ -19,7 +19,7 @@ const Dbhome = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/api/db");
+      const response = await axios.get(`${process.env.REACT_APP_SERVER_DOMIN}/api/db`);
       setData(response.data);
     } catch (error) {
       console.error(error);
@@ -31,7 +31,7 @@ const Dbhome = () => {
       // Make an API request to update the order status
       toast("Order Completed Successfully");
 
-      const response = await axios.post("http://localhost:8080/update-status", {
+      const response = await axios.post(`${process.env.REACT_APP_SERVER_DOMIN}/update-status`, {
         orderId,
       });
 

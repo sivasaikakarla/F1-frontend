@@ -22,7 +22,7 @@ const Cards = () => {
 
   const [data1, setData] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:8080/api/datas')
+    axios.get(`${process.env.REACT_APP_SERVER_DOMIN}/api/datas`)
       .then(response => {
         setData(response.data);
       })
@@ -35,7 +35,7 @@ const Cards = () => {
 
   const [data2,setData2]=useState([]);
   useEffect(() => {
-    axios.get('http://localhost:8080/connectiondatas')
+    axios.get(`${process.env.REACT_APP_SERVER_DOMIN}/connectiondatas`)
       .then(response => {
         setData2(response.data);
       })
@@ -47,7 +47,7 @@ const Cards = () => {
 
   const [data3,setData3]=useState([]);
   useEffect(() => {
-    axios.get('http://localhost:8080/complaintdata')
+    axios.get(`${process.env.REACT_APP_SERVER_DOMIN}/complaintdata`)
       .then(response => {
         setData3(response.data);
       })
@@ -59,7 +59,7 @@ const Cards = () => {
   
   const [data4, setData4] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:8080/dbdatas')
+    axios.get(`${process.env.REACT_APP_SERVER_DOMIN}/dbdatas`)
       .then(response => {
         setData4(response.data);
       })

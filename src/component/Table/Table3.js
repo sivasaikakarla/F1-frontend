@@ -28,7 +28,7 @@ export default function BasicTable() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/approveconn");
+      const response = await axios.get(`${process.env.REACT_APP_SERVER_DOMIN}/approveconn`);
       setData(response.data);
     } catch (error) {
       console.error(error);
@@ -91,7 +91,7 @@ export default function BasicTable() {
                   </button>
                   {showDocuments[row._id] && (
                     <iframe
-                      src={`http://localhost:8080/${row.document}`}
+                      src={`${process.env.REACT_APP_SERVER_DOMIN}/${row.document}`}
                       width="100%"
                       height="500px"
                       title="Document Viewer"

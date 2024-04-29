@@ -9,7 +9,7 @@ const OrderComparisonChart = () => {
 
   useEffect(() => {
     // Fetch data from the backend API using Axios
-    axios.get('http://localhost:8080/api/dbstats')
+    axios.get(`${process.env.REACT_APP_SERVER_DOMIN}/api/dbstats`)
       .then(response => {
         setData(response.data);
       })

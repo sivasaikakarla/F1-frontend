@@ -25,7 +25,7 @@ const Complaint = () => {
 
   useEffect(() => {
     // Fetch data from the backend when the component mounts
-    axios.get('http://localhost:8080/api/data')
+    axios.get(`${process.env.REACT_APP_SERVER_DOMIN}/api/data`)
       .then(response => 
         {
           console.log(response.data)

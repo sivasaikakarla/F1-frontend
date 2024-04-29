@@ -7,7 +7,7 @@ const ComplaintHistory = () => {
 
     useEffect(() => {
       // Fetch data from the backend when the component mounts
-      axios.get('http://localhost:8080/api/comphistory')
+      axios.get(`${process.env.REACT_APP_SERVER_DOMIN}/api/comphistory`)
         .then(response => setData(response.data))
         .catch(error => console.error(error));
     }, []);

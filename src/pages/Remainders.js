@@ -14,7 +14,7 @@ const FormComponent = () => {
     try {
       // Make an API request to update the order status
       
-      const response = await axios.post("http://localhost:8080/remainders",{
+      const response = await axios.post(`${process.env.REACT_APP_SERVER_DOMIN}/remainders`,{
       subject,message
       })
     } catch (error) {

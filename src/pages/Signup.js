@@ -141,7 +141,7 @@ function Signup() {
 
     // Assuming you have a server endpoint for sending OTP
     try {
-      const response = await fetch('http://localhost:8080/send-otp', {
+      const response = await fetch(`${process.env.REACT_APP_SERVER_DOMIN}/send-otp`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -165,7 +165,7 @@ function Signup() {
 
     // Assuming you have a server endpoint for verifying OTP
     try {
-      const response = await fetch('http://localhost:8080/verify-otp', {
+      const response = await fetch(`${process.env.REACT_APP_SERVER_DOMIN}/verify-otp`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
