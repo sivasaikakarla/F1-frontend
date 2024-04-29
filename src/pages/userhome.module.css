@@ -1,0 +1,275 @@
+/* GridContainer.css */
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+    background-color: #2e5d8d;
+    color: white;
+  }
+  
+  .leftside {
+    text-align: left;
+    padding-top: 20px;
+  }
+  
+  .rightsidep {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px; /* Set a minimum height for the right-side container */
+  }
+  
+  .rightsidep img {
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    flex: 1; /* Allow the image to grow and fill the remaining height */
+  }
+  
+  .bottombutton {
+    grid-column: span 2;
+    margin-top: 20px;
+  }
+  
+  .bottombutton button {
+    padding: 10px 20px;
+    background-color: #4e92da;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .bottombutton button:hover {
+    background-color: #0056b3;
+  }
+  /* DeliveryWorks.css */
+  
+  .deliveryworks {
+    text-align: center;
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 30px;
+  }
+  
+  .gridcontainer2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .griditem {
+    width: 300px;
+    height: 300px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .griditem:hover {
+    transform: scale(1.05);
+  }
+  
+  .griditem h3 {
+    margin-bottom: 10px;
+  }
+  v/* ComplaintContainer.css */
+  
+  .complaintcontainer {
+    background-color: #2e5d8d;
+    color: white;
+    padding: 50px 0;
+  }
+  
+  .complaintcontent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .imagecontainer img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .textcontainer {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  .btn {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #17a2b8;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #106d86;
+  }
+  /* ComplaintContainer.css */
+  
+  .complaintcontainer {
+    background-color: #2e5d8d;
+    color: white;
+    padding: 50px 0;
+  }
+  
+  .complaintcontent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .imagecontainer img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .textcontainer {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  .btn {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #17a2b8;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #106d86;
+  }
+  /* Footer.css */
+  
+  .footercontainer {
+    background-color: #1E3A8A;
+    color: white;
+    padding: 30px 0;
+  }
+  
+  .footercontent {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .leftsided,
+  .rightsided {
+    flex: 1;
+  }
+  
+  .leftsided .newsletterformcontainer {
+    background-color: #1E3A8A;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .rightsided .attractivecontent {
+    text-align: center;
+    background-color: #2e5d8d;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .rightsided h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .rightsided p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background-color: #758ce6;
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+  }
+  
+  /* MyForm.css */
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .formgroup {
+    margin-bottom: 20px;
+  }
+  
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input[type="email"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  ::placeholder {
+    color: #aaa;
+  }

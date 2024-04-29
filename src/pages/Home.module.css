@@ -1,0 +1,209 @@
+/* Home.css */
+
+.body{
+  background-color:#bdbfc0 ;
+}
+.gridcontainer {
+  padding-top: 100px;
+    display: grid;
+    height: 500px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+    color: black;
+    background-color: #bdbfc0;
+    padding-left: 50px;
+    padding-right: 20px;
+  }
+  
+  .leftside {
+    text-align: left;
+    padding-bottom: 30px;
+  }
+.leftside p{
+  font-size: 18px;
+}
+
+  .rightside {
+    position: relative;
+    min-height: 300px; /* Set a minimum height for the right-side container */
+    overflow: hidden;
+  }
+  
+  .rightside::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assests/home1.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .rightside::after {
+    content: "";
+    display: block;
+    padding-top: 100%; /* This is the aspect ratio for a square box (1:1) */
+  }
+  
+  /* Additional styling as needed */
+  
+  .container {
+    display: grid;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* width: 2500px; */
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    background-color: #052282;
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  
+  .videogrid {
+    grid-column: 1 / 2;
+    border-radius: 10px;
+  }
+  
+  .infogrid {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: none;
+    justify-content: center;
+    padding-right: 5%;
+  }
+  
+  .connectbtn {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .connectbtn::after {
+    content: " →"; /* Right arrow character */
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+  }
+  
+  .connectbtn:hover {
+    background-color: #2980b9;
+  }
+  
+  p {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .gridcontainerw {
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+    background-color: #283e85;
+    color: white;
+  }
+  
+  .leftsidew {
+    text-align: center;
+  }
+  
+  .rightsidew {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rightsidew img {
+    border-radius: 50%; /* Make the image circular */
+    width: 350px; /* Adjust the width as needed */
+    height: 350px;
+  }
+  
+  /* Carousel.css */
+  
+  /* Update your existing CSS */
+  
+  .corosol {
+    background-color: #edf1f5;
+    color: rgb(255, 255, 255);
+  }
+  
+  .carouselcontainer {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #edf1f5;
+  }
+  
+  .carouselitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10% auto;
+  }
+  
+  .carouselitem img {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-left: 45%;
+  }
+  
+  .carouselitem p {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 200;
+  }
+  
+  .footer {
+    color: white;
+    background-color: #1E40AF;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    /* opacity: 0; */
+  }
+  
+  .footerdiv1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .footericons {
+    margin: 20px 30px;
+    color: white;
+  }
+  
+  .bottombuttonw button {
+    padding: 10px 20px;
+    background-color: #4e92da;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
