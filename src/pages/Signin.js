@@ -46,7 +46,7 @@ const Signin = () => {
     if (email && password) {
       const fetchData = await fetch(`${process.env.REACT_APP_SERVER_DOMIN}/signin`,{
         method : "POST",
-        headers : {
+        headers : { 
           "content-type":"application/json"
         },
         body : JSON.stringify(data)
