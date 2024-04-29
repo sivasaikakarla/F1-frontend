@@ -6,7 +6,7 @@ There are 3 types of users:
 -Admin
 -Delivery Boy
 
-## How to Run
+## How to Run the code
 
 To get started, follow these steps:
 
