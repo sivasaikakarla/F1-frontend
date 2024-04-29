@@ -2,7 +2,7 @@ name: Frontend Docker Image
 
 on:
   push:
-    branches: ['master']
+    branches: ['main']
 
 jobs:
   push_to_registry:
