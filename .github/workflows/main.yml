@@ -1,4 +1,4 @@
-name: CI/CD
+name: F1 Gas CI Github Actions
 
 on:
   push:
