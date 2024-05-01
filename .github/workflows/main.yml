@@ -17,7 +17,7 @@ jobs:
         uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          password: dckr_pat_H5P0ztzuEbgYlG3vK4xniDepzWE
 
       - name: Build and push Docker images
         env:
