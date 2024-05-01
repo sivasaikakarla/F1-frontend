@@ -31,7 +31,7 @@ npm run dev
 
 
 5. Access the website at [http://localhost:3000](http://localhost:3000).
-6. Use the Deployed urls  [Frontend](https://f1-frontend-inky.vercel.app/)  [Backend]([http://localhost:3000](https://f1-backend.onrender.com))
+6. Use the Deployed urls  [Frontend](https://f1-frontend-inky.vercel.app/)  [Backend]([https://f1-backend.onrender.com]
 
 ## Features
 
