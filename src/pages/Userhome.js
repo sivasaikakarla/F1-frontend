@@ -29,13 +29,10 @@ const Userhome = () => {
         <div className={styles.leftside}>
           <h2>Book your Cylinder</h2><br></br>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            
+          
+          Explore a world of endless stories with our book cylinders. Dive into captivating narratives, discover new adventures,
+           and immerse yourself in the magic of literature. From timeless classics to contemporary gems,
+           our curated selection awaits your next literary journey. Elevate your reading experience today with our book cylinders.
           </p>
           <div className={styles.bottombutton}>
             <Link to='/booking' style={buttonStyle}>Click me</Link>
@@ -95,11 +92,9 @@ const Userhome = () => {
           <div className={styles.textcontainer}>
             <h1 className="mb-4 display-2 fw-bold">Have a Complaint?</h1>
             <p className="mt-3 mb-4">
-              Lorem ipsum dolor consectetur adipiscing elit <br />
-              Sed ultricies feugiat nisi, in consequat tortor posuere eu.
-              <br />
-              Praesent sit amet tempor velit, <br />
-              sit amet pulvinar magna
+            Raise your voice and make a difference with our complaint register. Your feedback matters, 
+            and we're here to listen. Whether it's a suggestion, concern, or inquiry, we're dedicated to resolving 
+            issues promptly and ensuring your satisfaction.
             </p>
             <br></br>
             <Link to='/complaint' className="btn btn-info" role="button">

@@ -26,17 +26,17 @@ const Home = () => {
     {
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_BNgzz_uTZKteGYqjA3Ww1yhIJGPL_S4ygXkm5Bm_NA&s",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      text: "Your gas booking agency is exemplary in its efficiency and customer service. From seamless booking processes to timely deliveries, your dedication to ensuring households have access to essential resources is truly commendable. Your commitment to reliability makes life easier for countless individuals, and your professionalism sets a standard for excellence in service. Keep up the outstanding work!",
     },
     {
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_BNgzz_uTZKteGYqjA3Ww1yhIJGPL_S4ygXkm5Bm_NA&s",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      text: "Your gas booking agency is exemplary in its efficiency and customer service. From seamless booking processes to timely deliveries, your dedication to ensuring households have access to essential resources is truly commendable. Your commitment to reliability makes life easier for countless individuals, and your professionalism sets a standard for excellence in service. Keep up the outstanding work!",
     },
     {
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_BNgzz_uTZKteGYqjA3Ww1yhIJGPL_S4ygXkm5Bm_NA&s",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      text: "Your gas booking agency is exemplary in its efficiency and customer service. From seamless booking processes to timely deliveries, your dedication to ensuring households have access to essential resources is truly commendable. Your commitment to reliability makes life easier for countless individuals, and your professionalism sets a standard for excellence in service. Keep up the outstanding work!",
     },
   ];
 
