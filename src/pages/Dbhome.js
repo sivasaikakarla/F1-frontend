@@ -31,7 +31,7 @@ const Dbhome = () => {
       // Make an API request to update the order status
       toast("Order Completed Successfully");
 
-      const response = await axios.post(`${process.env.REACT_APP_SERVER_DOMIN}/update-status`, {
+      const response = await axios.put(`${process.env.REACT_APP_SERVER_DOMIN}/update-status`, {
         orderId,
       });
 
